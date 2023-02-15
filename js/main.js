@@ -31,10 +31,12 @@ function modalRender() {
   const mBody = document.querySelector(".modal-body");
   let res = "";
   shoppingMovies?.map((kino) => {
-    res += `
+  
+      res += `
       <img width="100" src="${kino.poster}">
       <p>${kino.title}</p>
-    `;
+      `;
+   
   });
   mBody.innerHTML = res;
 }
@@ -93,6 +95,7 @@ kinole.forEach((v) => {
     dataProsmotr.append(option);
   }
 });
+// suuuuuuuuuuuuuiiii 
 
 render(kinole);
 selectGenerator();
